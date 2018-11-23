@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SignUp page</title>
+</head>
+<style>
+	.container
+	{
+		position:relative;
+		color:black;
+	}
+	.centered
+	{
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+		border:2px;
+		border-style:dotted;
+	}
+	table,th,td
+	{
+		border:3px solid black;
+		border-collapse:collapse;
+		font-size:30px;
+		size:30px;
+		height:40px;
+		font-weight:bolder;
+	}
+	.button
+	{
+		color:white;
+		background-color:black;
+		padding:3px;
+		font-family:lucida fax;
+		font-size:30px;
+		cursor:pointer;
+		text-dexoration:none;
+		margin:5px;
+	}
+	.button:hover
+	{
+		background-color:powderblue;
+		color:black;
+	}
+</style>
+<body>
+	<div class="container">
+		<img src="signupimage1.jpg" alt="signup page image" width=100% style="opacity:1.1;">
+		<div class="centered">
+			<form action="signup">
+				<table align="center">
+					<tr>
+						<th colspan="2" style="font-family:Script MT;font-size:40px;color:orange;">Register</th>
+					</tr>
+					<tr>
+						<td>Enter Username :</td>
+						<td><input type="text" name="n1" placeholder="Enter Username" pattern="[a-zA-Z ]+" title="Username must be TEXT only"required></td>
+					</tr>
+					<tr>
+						<td>
+							Enter Userid :
+						</td>
+						<td>
+							<input type="Email" name="n2" placeholder="Enter Userid" title="Enter valid userid" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Enter Password :
+						</td>
+						<td>
+							<input type="password" name="n3" placeholder="Enter Password" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Enter security key :
+						</td>
+						<td>
+							<input type="text" name="n4" placeholder="Enter your pet name" required>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:center;">
+							<button class="button" onclick="signup">Submit</button>
+						</td>
+						<td style="text-align:center;">
+							<button class="button" onclick="reset" type="reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<footer style="background-color:grey;color:black;font-family:Script MT;">
+		<h3 style="text-align:center;font-size:50px;">Thank you</h3><a href="index.html" title="Click to go on Home page"><img src="go back1.jpg" alt="image not found" width="50px"></a>
+	</footer>
+</body>
+</html>

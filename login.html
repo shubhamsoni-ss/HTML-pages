@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+	<style>
+		.container
+		{
+			position:relative;
+			color:white;
+		}
+		.centered
+		{
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+			border:3px;
+			border-style:dotted;
+		}
+		.button
+		{
+			color:black;
+			background-color:grey;
+			font-family:lucida fax;
+			font-size:30px;
+			padding:3px;
+			cursor:pointer;
+		}
+		.button:hover
+		{
+			background-color:powderblue;
+		}
+		table,th,td
+		{
+			border:3px solid black;
+			border-collapse:collapse;
+			font-size:30px;
+			size:40px;
+			height:40px;
+		}
+	</style>
+<body>
+	<div class="container">
+		<img src="back1.jpg" alt="login page image" width="100%" style="opacity:0.9;">
+		<div class="centered">
+			<form action="login" method="post">
+				<table align="center">
+					<tr>
+						<th colspan="2" style="font_family:Script MT;color:grey;font-size:40px;">LOGIN</th>
+					</tr>
+					<tr>
+						<td>Enter userid :</td>
+						<td><input type="Email" name="n1" placeholder="Enter your userid" required></td>
+					</tr>
+					<tr>
+						<td>Enter Password :</td>
+						<td><input type="password" name="n2" placeholder="Enter your account password" required></td>
+					</tr>
+						<tr>
+						<td style="text-align:center;"><button class="button" onclick="login">LOGIN</button></td>
+						<td style="text-align:center;"><button class="button" onclick="reset" type="reset">Reset</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<footer style="background-color:grey;color:black;font-family:Script MT;">
+		<h3 style="text-align:center;font-size:50px;">Thank you</h3><a href="index.html" title="Click to go on Home page"><img src="go back1.jpg" alt="image not found" width="50px"></a>
+	</footer>
+</body>
+</html>
